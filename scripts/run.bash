@@ -6,7 +6,7 @@ if [ -z "$command" ]; then
     command="start"
 fi
 
-ProjectRoot="${BASH_SOURCE%/*}/.."
+ProjectRoot="$(dirname "$(readlink -f "$0")")/.."
 
 export AMBULANCE_API_ENVIRONMENT="Development"
 export AMBULANCE_API_PORT="8080"
