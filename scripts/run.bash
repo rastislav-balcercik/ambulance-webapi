@@ -28,7 +28,10 @@ case "$command" in
         ;;
     "test")
         go test -v ./...
-    ;;
+        ;;
+    "docker")
+       docker build -t rbalcercik/ambulance-wl-webapi:local-build -f ${ProjectRoot}/build/docker/Dockerfile .
+       ;;
     "mongo")
         mongo up
         ;;
