@@ -42,7 +42,7 @@ RUN CGO_ENABLED=0 GOOS=linux \
 FROM scratch
 
 # see https://github.com/opencontainers/image-spec/blob/main/annotations.md for details
-LABEL org.opencontainers.image.authors="Your Name"
+LABEL org.opencontainers.image.authors="Rastislav Balcercik"
 LABEL org.opencontainers.image.title="Ambulance Waiting List WebAPI Service"
 LABEL org.opencontainers.image.description="WEBAPI for managing entries in ambulances` waiting list"
 
